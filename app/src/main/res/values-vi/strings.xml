@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoneyKeeper</string>
+    <string name="tab1">Lịch sử</string>
+    <string name="tab2">Báo cáo</string>
+    <string name="tab3">Thêm giao dịch</string>
+    <string name="tab4">Giới thiệu</string>
+
+    <string name="about_text">Cám ơn bạn đã sử dụng phần mềm quản lý tài chính cá nhân </string>
+</resources>

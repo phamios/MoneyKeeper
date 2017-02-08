@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">MoneyKeeper</string>
-    <string name="tab1"></string>
-    <string name="tab2"></string>
-    <string name="tab3"></string>
+    <string name="tab1">History</string>
+    <string name="tab2">Report</string>
+    <string name="tab3">Add Funds</string>
+    <string name="tab4">About</string>
+
+
+    <string name="about_text">Thanks for using my application that is Money Managements</string>
 </resources>
