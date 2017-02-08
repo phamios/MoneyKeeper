@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
+import android.view.ViewGroup;
+import android.view.ViewParent;
 
 import com.bot.redsun.moneykeeper.Adapter.TabsPagerAdapter;
 
@@ -17,12 +19,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     private TabsPagerAdapter mainAdapter;
     private android.app.ActionBar actionBar;
 
-    private String[] tabs = {
-            getString(R.string.tab1),
-            getString(R.string.tab2),
-            getString(R.string.tab3),
-            getString(R.string.tab4)
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,19 +32,31 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         actionBar.setHomeButtonEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 
+        String[] tabs = {
+                getResources().getString(R.string.tab1),
+                getResources().getString(R.string.tab2),
+                getResources().getString(R.string.tab3),
+                getResources().getString(R.string.tab4)
+        };
+
+
         for(String tab_name : tabs){
            actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
         }
 
-        mainPage.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-
+        mainPage.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener()
+        {
             @Override
-            public void onPageSelected(int position) {
-                actionBar.setSelectedNavigationItem(position);
+            public void onPageSelected(int position)
+            {
+                actionBar.getTabAt(position).select();
+//                actionBar.setSelectedNavigationItem(position);
             }
+
             @Override
             public void onPageScrolled(int arg0, float arg1, int arg2) {
             }
+
             @Override
             public void onPageScrollStateChanged(int arg0) {
             }
