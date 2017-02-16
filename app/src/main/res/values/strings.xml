@@ -11,4 +11,5 @@
     <string name="lblAmount">Amount</string>
     <string name="lblType">Type</string>
     <string name="lblContent">Description</string>
+    <string name="IntroSubmitTransaction">Input your Money</string>
 </resources>

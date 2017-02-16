@@ -12,5 +12,5 @@
     <string name="lblAmount">Số tiền</string>
     <string name="lblType">Loại </string>
     <string name="lblContent">Nội dung</string>
-
+    <string name="IntroSubmitTransaction">Nhập số tiền của bạn</string>
 </resources>

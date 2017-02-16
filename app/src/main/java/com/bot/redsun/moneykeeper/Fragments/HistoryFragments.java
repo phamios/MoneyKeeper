@@ -21,7 +21,7 @@ import java.util.List;
  * Created by redsu on 08/02/2017.
  */
 
-public class HistoryFragments extends Fragment implements AdapterView.OnItemSelectedListener {
+public class HistoryFragments extends Fragment  {
 
     Button bttSubmit;
     EditText txtAmount;
@@ -31,7 +31,7 @@ public class HistoryFragments extends Fragment implements AdapterView.OnItemSele
     int Amount;
     String Description;
     String type;
-
+    int intType;
 
 
     @Override
@@ -40,41 +40,11 @@ public class HistoryFragments extends Fragment implements AdapterView.OnItemSele
 
         View rootView = inflater.inflate(R.layout.fragment_history, container, false);
 
-        sp = (Spinner)rootView.findViewById(R.id.moneyType);
-        sp.setOnItemSelectedListener(this);
-        List<String> categories = new ArrayList<String>();
-        categories.add(getString(R.string.selecttype1));
-        categories.add(getString(R.string.selecttype2));
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_item, categories);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // attaching data adapter to spinner
-        sp.setAdapter(dataAdapter);
 
-        // Get value from Template
-        txtAmount = (EditText)rootView.findViewById(R.id.txtAmount);
-        txtDescription = (EditText)rootView.findViewById(R.id.txtDescription);
-        type = sp.getSelectedItem().toString();
-
-        bttSubmit = (Button) rootView.findViewById(R.id.bttSubmit);
-        bttSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
 
         return rootView;
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String item = parent.getItemAtPosition(position).toString();
 
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
-    }
-    public void onNothingSelected(AdapterView<?> arg0) {
-        // TODO Auto-generated method stub
-    }
 }

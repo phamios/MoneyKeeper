@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.bot.redsun.moneykeeper.ObjectModel.TransactionModel;
-import com.sonpham.mymoney.entity.Transactions;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
