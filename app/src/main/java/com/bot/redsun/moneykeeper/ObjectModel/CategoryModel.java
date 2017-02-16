@@ -1,4 +1,4 @@
-package com.bot.redsun.moneykeeper.Model;
+package com.bot.redsun.moneykeeper.ObjectModel;
 
 /**
  * Created by redsu on 10/02/2017.

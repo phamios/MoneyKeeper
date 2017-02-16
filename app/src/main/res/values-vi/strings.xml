@@ -5,6 +5,12 @@
     <string name="tab2">Báo cáo</string>
     <string name="tab3">Thêm giao dịch</string>
     <string name="tab4">Giới thiệu</string>
-
+    <string name="selecttype1">Nguồn thu</string>
+    <string name="selecttype2">Xuất tiền</string>
+    <string name="bttSubmit">Đồng ý</string>
     <string name="about_text">Cám ơn bạn đã sử dụng phần mềm quản lý tài chính cá nhân </string>
+    <string name="lblAmount">Số tiền</string>
+    <string name="lblType">Loại </string>
+    <string name="lblContent">Nội dung</string>
+
 </resources>

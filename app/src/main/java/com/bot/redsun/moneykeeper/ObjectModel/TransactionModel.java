@@ -1,4 +1,4 @@
-package com.bot.redsun.moneykeeper.Model;
+package com.bot.redsun.moneykeeper.ObjectModel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

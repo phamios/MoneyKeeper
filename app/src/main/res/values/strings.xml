@@ -4,7 +4,11 @@
     <string name="tab2">Report</string>
     <string name="tab3">Add Funds</string>
     <string name="tab4">About</string>
-
-
     <string name="about_text">Thanks for using my application that is Money Managements</string>
+    <string name="bttSubmit">Accept</string>
+    <string name="selecttype1">InCome</string>
+    <string name="selecttype2">OutCome</string>
+    <string name="lblAmount">Amount</string>
+    <string name="lblType">Type</string>
+    <string name="lblContent">Description</string>
 </resources>
