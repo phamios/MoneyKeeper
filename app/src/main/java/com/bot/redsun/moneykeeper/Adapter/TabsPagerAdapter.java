@@ -24,11 +24,11 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
         switch (index) {
             case 0:
-                return new HistoryFragments();
+                return new CreateTransFragments();
             case 1:
                 return new ReportFragments();
             case 2:
-                return new CreateTransFragments();
+                return new HistoryFragments();
             case 3:
                 return new AboutFragment();
         }

@@ -47,7 +47,6 @@ public class CreateTransFragments extends Fragment implements AdapterView.OnItem
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp.setAdapter(dataAdapter);
 
-
         // Creating adapter for spinner
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -56,7 +55,6 @@ public class CreateTransFragments extends Fragment implements AdapterView.OnItem
                 intType = pos;
             }
             public void onNothingSelected(AdapterView<?> arg0) {
-
             }
         });
 

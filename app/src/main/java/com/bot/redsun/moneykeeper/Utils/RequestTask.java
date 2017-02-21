@@ -17,7 +17,7 @@ import java.io.IOException;
  * Created by sonpx on 2/16/17.
  */
 
-class RequestTask extends AsyncTask<String, String, String> {
+public class RequestTask extends AsyncTask<String, String, String> {
     @Override
     protected String doInBackground(String... uri) {
         HttpClient httpclient = new DefaultHttpClient();
